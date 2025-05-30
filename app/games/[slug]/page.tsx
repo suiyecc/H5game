@@ -28,7 +28,8 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
   const isProd = process.env.NODE_ENV === 'production'
   const basePath = isProd ? '/H5Game' : ''
   const baseUrl = isProd ? 'https://suiyecc.github.io' : 'http://localhost:3000'
-  const imageUrl = `${baseUrl}${basePath}${game.thumbnail}`
+  const normalizedThumbnail = game.thumbnail.startsWith('/') ? game.thumbnail : `/${game.thumbnail}`
+  const imageUrl = `${baseUrl}${basePath}${normalizedThumbnail}`
 
   return {
     title: `${game.title} - H5Game`,

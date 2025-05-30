@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { Game } from '@/types/game'
@@ -27,11 +26,12 @@ export default function GameCard({ game, priority = false }: GameCardProps) {
   // 获取带有basePath的图片路径
   const getImagePath = (path: string) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/H5Game' : ''
-    return `${basePath}${path}`
+    const normalizedPath = path.startsWith('/') ? path : `/${path}`
+    return `${basePath}${normalizedPath}`
   }
 
   return (
-    <Link href={`/game/${game.id}`} className="group block">
+    <Link href={`/games/${game.slug}`} className="group block">
       <div className="bg-card rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-[0.98] border border-gray-800 hover:border-primary touch-manipulation">
         {/* Game Image */}
         <div className="relative aspect-video overflow-hidden">

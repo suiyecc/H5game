@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 import type { Game } from '@/types/game'
 
@@ -84,6 +83,13 @@ export default function MasonryGallery({ games, columns = 4 }: MasonryGalleryPro
     return iconMap[category] || '🎮'
   }
 
+  // 获取带有basePath的图片路径
+  const getImagePath = (path: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/H5Game' : ''
+    const normalizedPath = path.startsWith('/') ? path : `/${path}`
+    return `${basePath}${normalizedPath}`
+  }
+
   return (
     <div className="w-full px-2 sm:px-4">
       <div 
@@ -104,7 +110,7 @@ export default function MasonryGallery({ games, columns = 4 }: MasonryGalleryPro
                   {/* 游戏截图/GIF */}
                   <div className="relative overflow-hidden">
                     <img
-                      src={game.gif || game.thumbnail}
+                      src={game.gif || getImagePath(game.thumbnail)}
                       alt={game.title}
                       className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500"
                       style={{

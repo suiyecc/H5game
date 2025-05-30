@@ -585,7 +585,7 @@ export const metadata: Metadata = {
 4. **URL 结构**
    - 使用语义化的 URL 结构
    - 分类页面：`/category/[category]`
-   - 游戏页面：`/game/[slug]`
+   - 游戏页面：`/games/[slug]`
 
 5. **性能优化**
    - 启用静态生成 (SSG)
@@ -623,7 +623,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   // 游戏页面
   const gamePages = games.map((game) => ({
-    url: `${baseUrl}/game/${game.slug}`,
+    url: `${baseUrl}/games/${game.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

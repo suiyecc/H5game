@@ -3,14 +3,12 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   basePath: isProd ? '/H5Game' : '',
-  assetPrefix: isProd ? '/H5Game/' : '',
+  assetPrefix: isProd ? '/H5Game' : '',
   output: 'export',
   distDir: 'out',
   trailingSlash: true,
   images: {
-    unoptimized: true,
-    // 添加图片路径配置
-    path: isProd ? '/H5Game/_next/image' : '/_next/image'
+    unoptimized: true
   },
   // 添加公共资源路径配置
   env: {
