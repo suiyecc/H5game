@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "arcade": "Arcade Games",
+    "girl": "Girl Games",
+    "action": "Action Games",
+    "adventure": "Adventure Games",
+    "racing": "Racing Games",
+    "search": "Search games...",
+    "languageLabel": "Language:",
+    "chinese": "中文",
+    "english": "English"
+  },
+  "hero": {
+    "title": "Discover the Best Online Games",
+    "subtitle": "Discover endless world of free games",
+    "description": "Here you can find exciting games of all types, from classic arcade to modern adventures, all free to play! No downloads required, click and play instantly.",
+    "playNow": "Start Playing Now",
+    "learnMore": "Explore More Games",
+    "stats": {
+      "freeGames": "Free Games",
+      "categories": "Game Categories",
+      "freeToPlay": "Free to Play",
+      "available": "Always Available"
+    }
+  },
+  "categories": {
+    "title": "Game Categories",
+    "viewAll": "View All"
+  },
+  "featured": {
+    "title": "Featured Games"
+  },
+  "recent": {
+    "title": "Latest Games"
+  },
+  "gallery": {
+    "title": "🎮 Game Gallery",
+    "subtitle": "Browse beautiful game screenshots, click to start playing",
+    "featured": "Hot",
+    "freeToPlay": "Free to Play",
+    "playNow": "Play Now",
+    "viewAll": "View All",
+    "noGames": "No games available",
+    "comingSoon": "Stay tuned for more exciting content!",
+    "loadMore": "Load More Games"
+  },
+  "footer": {
+    "description": "Free online gaming platform offering various types of HTML5 games. No download required, click and play, enjoy the best gaming experience.",
+    "gameCategories": "Game Categories",
+    "links": "Links",
+    "about": "About Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "sitemap": "Sitemap",
+    "copyright": "© 2024 BudgetBites Games. All rights reserved.",
+    "poweredBy": "Powered by Next.js"
+  },
+  "game": {
+    "play": "Play Game",
+    "fullscreen": "Fullscreen",
+    "loading": "Loading...",
+    "error": "Failed to load game",
+    "retry": "Retry",
+    "reload": "Reload Game",
+    "fullscreen": "Fullscreen Game",
+    "exitFullscreen": "Exit Fullscreen",
+    "loadingGame": "Loading Game...",
+    "pleaseWait": "Please wait, the game is about to start",
+    "loadFailed": "Game Loading Failed",
+    "checkConnection": "Please check your network connection or try again later",
+    "reloadButton": "Reload",
+    "keyboardMouse": "Use keyboard and mouse controls",
+    "touchSupport": "Touch screen supported",
+    "haveProblem": "Having problems?",
+    "feedback": "Feedback"
+  },
+  "category": {
+    "arcadeDesc": "Classic arcade games collection, relive childhood memories",
+    "girlDesc": "Fun games designed specifically for girls",
+    "actionDesc": "Exciting action adventure games",
+    "adventureDesc": "Adventure journey to explore unknown worlds",
+    "racingDesc": "High-speed racing, feel the speed and passion",
+    "totalGames": "Total Games",
+    "featuredGames": "Featured Games",
+    "free": "Free",
+    "completelyFree": "Completely Free",
+    "filter": "Filter",
+    "all": "All",
+    "featured": "Featured",
+    "latest": "Latest",
+    "sortBy": "Sort By",
+    "mostPopular": "Most Popular",
+    "newest": "Newest",
+    "highestRated": "Highest Rated",
+    "nameSort": "Name Sort",
+    "noGamesInCategory": "No {category} Available",
+    "addingMoreGames": "We are working hard to add more exciting {category}, stay tuned!",
+    "browseOtherGames": "Browse Other Games",
+    "featuredCategory": "Featured {category}",
+    "allCategory": "All {category}",
+    "loadMoreCategory": "Load More {category}"
+  },
+  "common": {
+    "advertisement": "Advertisement",
+    "adBanner": "728x90 Ad Banner",
+    "adSidebar": "300x250 Ad Space"
+  },
+  "gameDetail": {
+    "favorite": "Favorite",
+    "share": "Share",
+    "gameInfo": "Game Info",
+    "category": "Category",
+    "rating": "Rating",
+    "playCount": "Play Count",
+    "relatedGames": "Related Games"
+  }
+}
