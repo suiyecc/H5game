@@ -24,6 +24,12 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     }
   }
 
+  // 构造完整的图片URL用于元数据
+  const isProd = process.env.NODE_ENV === 'production'
+  const basePath = isProd ? '/H5Game' : ''
+  const baseUrl = isProd ? 'https://suiyecc.github.io' : 'http://localhost:3000'
+  const imageUrl = `${baseUrl}${basePath}${game.thumbnail}`
+
   return {
     title: `${game.title} - H5Game`,
     description: game.description,
@@ -31,7 +37,13 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
     openGraph: {
       title: game.title,
       description: game.description,
-      images: [game.thumbnail],
+      images: [imageUrl],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: game.title,
+      description: game.description,
+      images: [imageUrl],
     },
   }
 }

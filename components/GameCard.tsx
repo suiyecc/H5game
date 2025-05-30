@@ -24,13 +24,19 @@ export default function GameCard({ game, priority = false }: GameCardProps) {
     return categoryMap[category] || category
   }
 
+  // 获取带有basePath的图片路径
+  const getImagePath = (path: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/H5Game' : ''
+    return `${basePath}${path}`
+  }
+
   return (
     <Link href={`/game/${game.id}`} className="group block">
       <div className="bg-card rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-[0.98] border border-gray-800 hover:border-primary touch-manipulation">
         {/* Game Image */}
         <div className="relative aspect-video overflow-hidden">
           <img
-            src={game.thumbnail}
+            src={getImagePath(game.thumbnail)}
             alt={game.title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             loading={priority ? 'eager' : 'lazy'}

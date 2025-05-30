@@ -1,11 +1,21 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
+  basePath: isProd ? '/H5Game' : '',
+  assetPrefix: isProd ? '/H5Game/' : '',
   output: 'export',
+  distDir: 'out',
   trailingSlash: true,
-  basePath: '/H5Game',
-  assetPrefix: '/H5Game/',
   images: {
-    unoptimized: true
+    unoptimized: true,
+    // 添加图片路径配置
+    path: isProd ? '/H5Game/_next/image' : '/_next/image'
+  },
+  // 添加公共资源路径配置
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/H5Game' : '',
+    NEXT_PUBLIC_SITE_URL: isProd ? 'https://suiyecc.github.io' : 'http://localhost:3000'
   }
 };
 

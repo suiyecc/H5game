@@ -12,6 +12,12 @@ interface GamePageClientProps {
 export default function GamePageClient({ game, relatedGames }: GamePageClientProps) {
   const { t } = useLanguage()
 
+  // 获取带有basePath的图片路径
+  const getImagePath = (path: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/H5Game' : ''
+    return `${basePath}${path}`
+  }
+
   return (
     <div className="min-h-screen bg-background">
       {/* Game Header */}
@@ -19,7 +25,7 @@ export default function GamePageClient({ game, relatedGames }: GamePageClientPro
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center space-x-4">
             <img
-              src={game.thumbnail}
+              src={getImagePath(game.thumbnail)}
               alt={game.title}
               className="w-16 h-16 rounded-lg object-cover"
             />
