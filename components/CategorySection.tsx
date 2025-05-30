@@ -2,18 +2,7 @@
 import Link from 'next/link'
 import GameCard from './GameCard'
 import { useLanguage } from '@/contexts/LanguageContext'
-
-interface Game {
-  id: number
-  slug: string
-  title: string
-  category: string
-  thumbnail: string
-  gif?: string
-  url: string
-  description: string
-  featured: boolean
-}
+import type { Game } from '@/types/game'
 
 interface CategorySectionProps {
   title: string

@@ -4,18 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
-
-interface Game {
-  id: number
-  slug: string
-  title: string
-  category: string
-  thumbnail: string
-  url: string
-  description: string
-  featured: boolean
-  gif?: string
-}
+import type { Game } from '@/types/game'
 
 interface MasonryGalleryProps {
   games: Game[]

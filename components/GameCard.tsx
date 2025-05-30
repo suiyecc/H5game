@@ -3,18 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
-
-interface Game {
-  id: number
-  slug: string
-  title: string
-  category: string
-  thumbnail: string
-  gif?: string
-  url: string
-  description: string
-  featured: boolean
-}
+import type { Game } from '@/types/game'
 
 interface GameCardProps {
   game: Game
