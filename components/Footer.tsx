@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">B</span>
               </div>
-              <span className="text-white font-bold text-lg sm:text-xl">BudgetBites Games</span>
+              <span className="text-white font-bold text-lg sm:text-xl">GigglyGame</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md text-sm sm:text-base">
               {(t.footer && t.footer.description) || '免费在线游戏平台，提供各种类型的HTML5游戏。无需下载，即点即玩，享受最佳的游戏体验。'}
@@ -44,21 +44,21 @@ export default function Footer() {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{(t.footer && t.footer.quickLinks) || '快速链接'}</h3>
+            <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{(t.footer && t.footer.links) || '快速链接'}</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.home) || '首页'}</Link></li>
               <li><Link href="/category/arcade" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.arcade) || '街机游戏'}</Link></li>
-              <li><Link href="/category/puzzle" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.puzzle) || '益智游戏'}</Link></li>
+              <li><Link href="/category/girl" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.girl) || '女生游戏'}</Link></li>
               <li><Link href="/category/action" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.action) || '动作游戏'}</Link></li>
-              <li><Link href="/category/strategy" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.strategy) || '策略游戏'}</Link></li>
+              <li><Link href="/category/adventure" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.nav && t.nav.adventure) || '冒险游戏'}</Link></li>
             </ul>
           </div>
           
           {/* Support */}
           <div>
-            <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{(t.footer && t.footer.support) || '支持'}</h3>
+            <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{(t.footer && t.footer.about) || '支持'}</h3>
             <ul className="space-y-2">
-              <li><Link href="/help" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.footer && t.footer.help) || '帮助'}</Link></li>
+              <li><Link href="/help" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">帮助</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.footer && t.footer.contact) || '联系我们'}</Link></li>
               <li><Link href="/privacy" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.footer && t.footer.privacy) || '隐私政策'}</Link></li>
               <li><Link href="/terms" className="text-gray-400 hover:text-purple-400 transition-colors text-sm sm:text-base py-1 block touch-manipulation">{(t.footer && t.footer.terms) || '服务条款'}</Link></li>
@@ -69,10 +69,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/50 mt-8 sm:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-            © 2024 BudgetBites Games. {(t.footer && t.footer.rights) || '版权所有'}
+            © 2024 GigglyGame. {(t.footer && t.footer.copyright) || '版权所有'}
           </p>
           <div className="flex items-center space-x-6">
-            <span className="text-gray-400 text-xs sm:text-sm">{(t.footer && t.footer.madeWith) || '用心制作'} ❤️</span>
+            <span className="text-gray-400 text-xs sm:text-sm">{(t.footer && t.footer.poweredBy) || '用心制作'} ❤️</span>
           </div>
         </div>
       </div>

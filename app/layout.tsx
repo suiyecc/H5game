@@ -13,13 +13,13 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'BudgetBites Games - 免费在线游戏平台',
+  title: 'GigglyGame - 免费在线游戏平台',
   description: '享受最好的免费在线游戏！包括街机游戏、女孩游戏、动作游戏、冒险游戏和赛车游戏。',
   keywords: '免费游戏, 在线游戏, 街机游戏, 女孩游戏, 动作游戏, 冒险游戏, 赛车游戏',
-  authors: [{ name: 'BudgetBites Games' }],
+  authors: [{ name: 'GigglyGame' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'BudgetBites Games - 免费在线游戏平台',
+    title: 'GigglyGame - 免费在线游戏平台',
     description: '享受最好的免费在线游戏！',
     type: 'website',
     locale: 'zh_CN',

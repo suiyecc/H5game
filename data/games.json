@@ -71,6 +71,7 @@
     "title": "寻宝冒险",
     "category": "adventure",
     "thumbnail": "/images/games/placeholder.svg",
+    "gif": "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
     "url": "https://example.com/treasure-hunt",
     "description": "探索神秘的洞穴和古老的遗迹，寻找隐藏的宝藏。",
     "featured": false
@@ -81,6 +82,7 @@
     "title": "密室逃脱",
     "category": "adventure",
     "thumbnail": "/images/games/placeholder.svg",
+    "gif": "https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif",
     "url": "https://example.com/escape-room",
     "description": "解开谜题，找到线索，从神秘的房间中逃脱。",
     "featured": true
@@ -91,6 +93,7 @@
     "title": "极速赛车",
     "category": "racing",
     "thumbnail": "/images/games/placeholder.svg",
+    "gif": "https://media.giphy.com/media/3o6ZtpvPW6fqxkE1xu/giphy.gif",
     "url": "https://example.com/speed-racer",
     "description": "驾驶超级跑车在赛道上飞驰，争夺冠军宝座。",
     "featured": false
@@ -101,6 +104,7 @@
     "title": "漂移大师",
     "category": "racing",
     "thumbnail": "/images/games/placeholder.svg",
+    "gif": "https://media.giphy.com/media/l0HlNQ03J5JxX6lva/giphy.gif",
     "url": "https://example.com/drift-master",
     "description": "掌握漂移技巧，在弯道中展现你的驾驶技术。",
     "featured": false

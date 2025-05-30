@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   }
 
   return {
-    title: `${categoryName} - BudgetBites Games`,
+    title: `${categoryName} - GigglyGame`,
     description: `${categoryName}，免费在线游戏，无需下载即可游玩。`,
     keywords: `${categoryName}, 免费游戏, 在线游戏, HTML5游戏`,
   }

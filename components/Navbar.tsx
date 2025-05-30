@@ -30,7 +30,7 @@ export default function Navbar() {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">🎮</span>
             </div>
-            <span className="text-xl font-bold text-white">BudgetBites</span>
+            <span className="text-xl font-bold text-white">GigglyGame</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -154,7 +154,7 @@ export default function Navbar() {
               {/* Language Selector */}
               <div className="pt-4 mt-4 border-t border-white/10">
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-400 text-sm">{(t.nav && t.nav.language) || '语言'}:</span>
+                  <span className="text-gray-400 text-sm">{(t.nav && t.nav.languageLabel) || '语言'}:</span>
                   <div className="flex space-x-2">
                     <button
                       onClick={() => setLanguage('zh')}

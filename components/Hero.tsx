@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            BudgetBites
+            GigglyGame
           </span>
           <br />
           <span className="text-white">Games</span>
