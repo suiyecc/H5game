@@ -46,6 +46,8 @@
 - **静态导出**: 支持静态网站托管
 - **图片优化**: Next.js 内置图片优化
 - **代码分割**: 自动代码分割和懒加载
+- **GitHub Pages**: 自动化部署工作流
+- **自定义域名**: 支持配置个人域名
 
 ## 📁 项目结构
 
@@ -262,28 +264,28 @@ const nextConfig = {
 
 ### GitHub Pages 部署
 
-1. **配置 GitHub Actions**
-   创建 `.github/workflows/deploy.yml`：
-   ```yaml
-   name: Deploy to GitHub Pages
-   on:
-     push:
-       branches: [ main ]
-   jobs:
-     build-and-deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v3
-         - uses: actions/setup-node@v3
-           with:
-             node-version: '18'
-         - run: npm ci
-         - run: npm run build
-         - uses: peaceiris/actions-gh-pages@v3
-           with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_dir: ./out
-   ```
+1. **已配置自动部署工作流**
+   项目已包含 `.github/workflows/deploy.yml` 配置文件，使用官方 GitHub Actions 进行部署。
+
+2. **启用 GitHub Pages**
+   - 进入仓库设置 Settings > Pages
+   - Source 选择 "GitHub Actions"
+   - 无需其他配置，推送到 main 分支会自动触发部署
+
+3. **自定义域名设置**（可选）
+   - 在仓库设置 Settings > Pages > Custom domain 中设置您的域名
+   - 或直接修改 `public/CNAME` 文件内容为您的域名
+   - 确保在您的域名提供商处添加正确的 DNS 记录：
+     ```
+     类型: CNAME
+     主机名: www 或 @
+     指向: yourusername.github.io
+     TTL: 3600 或自动
+     ```
+
+4. **查看部署状态**
+   - 在仓库的 Actions 标签页查看部署进度
+   - 部署完成后，可通过 `https://yourusername.github.io/H5game` 访问
 
 ### 自托管部署
 
