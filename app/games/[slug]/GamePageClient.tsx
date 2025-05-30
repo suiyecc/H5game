@@ -9,7 +9,7 @@ interface Game {
   title: string
   category: string
   thumbnail: string
-  gif: string
+  gif?: string
   url: string
   description: string
   featured: boolean
